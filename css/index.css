@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/***************************************/
+/* mainvisual */
+/***************************************/
+#mainvisual{
+	position: relative;
+}
+#mainvisual ul li.slider-item{
+	height: 700px;
+	max-height: 100vw;
+}
+#mainvisual ul li.slider-item img{
+	height: 100%;
+	object-fit: cover;
+}
+#mainvisual .kisya{
+	min-width: 300px;
+	max-width: 800px;
+	position: absolute;
+	left: 50%;
+    bottom: -50px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+
+/***************************************/
+/* message */
+/***************************************/
+#message{
+	padding: 80px 0;
+}
+#message p{
+	text-align: center;
+	font-size: 3.2rem;
+}
+#message p span{
+	font-size: 4.2rem;
+	background:linear-gradient(transparent 60%, var(--accent-color) 60%);
+}
+/***************************************/
+/* news */
+/***************************************/
+#news{
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("../img/news-bg.jpg");
+	background-attachment: fixed;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 80px 0;
+}
+#news h2{
+	color: #fff;
+	margin-bottom: 40px;
+	font-size: 4.2rem;
+	text-align: center;
+}
+#news ul.news-lists{
+	display: flex;
+	justify-content: space-between;
+}
+#news ul.news-lists li.news-list{
+	width: 32%;
+	background-color: var(--bg-color);
+	padding: 20px;
+	border-radius: 20px;
+}
+#news ul.news-lists li.news-list .img{
+	overflow: hidden;
+}
+#news ul.news-lists li.news-list img{
+	transition: all .3s;
+}
+#news ul.news-lists li.news-list:hover img{
+	transform: scale(1.3);
+}
+#news ul.news-lists li.news-list:hover p{
+	text-decoration: underline;
+}
+#news ul.news-lists li.news-list p.title{
+	font-size: 2.4rem;
+}
+
+/***************************************/
+/* smartphone only */
+/***************************************/
+@media screen and (max-width: 750px){
+	#news ul.news-lists{
+		flex-direction: column;
+	}
+	#news ul.news-lists li.news-list{
+		width: 100%;
+		margin-bottom: 40px;
+	}
+}
