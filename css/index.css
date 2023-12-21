@@ -10,7 +10,7 @@
 	position: relative;
 }
 #mainvisual ul li.slider-item{
-	height: 700px;
+	height: 800px;
 	max-height: 100vw;
 }
 #mainvisual ul li.slider-item img{
@@ -48,7 +48,6 @@
 #news{
 	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("../img/news-bg.jpg");
 	background-attachment: fixed;
-	background-position: bottom center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 80px 0;
