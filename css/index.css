@@ -89,6 +89,16 @@
 /* smartphone only */
 /***************************************/
 @media screen and (max-width: 750px){
+	
+	
+	#message p{
+		font-size: 2.4rem;
+	}
+	#message p span{
+		font-size: 3.2rem;
+	}
+	
+	
 	#news ul.news-lists{
 		flex-direction: column;
 	}
@@ -96,4 +106,5 @@
 		width: 100%;
 		margin-bottom: 40px;
 	}
+	
 }
