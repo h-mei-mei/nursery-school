@@ -10,7 +10,7 @@
 	position: relative;
 }
 #mainvisual ul li.slider-item{
-	height: 800px;
+	height: 700px;
 	max-height: 100vw;
 }
 #mainvisual ul li.slider-item img{
@@ -19,7 +19,7 @@
 }
 #mainvisual .kisya{
 	min-width: 300px;
-	max-width: 800px;
+	max-width: 600px;
 	position: absolute;
 	left: 50%;
     bottom: -50px;
@@ -42,13 +42,76 @@
 	font-size: 4.2rem;
 	background:linear-gradient(transparent 60%, var(--accent-color) 60%);
 }
+
+/***************************************/
+/* link */
+/***************************************/
+#link{
+	padding-bottom: 80px;
+}
+#link ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#link ul li{
+	width: 24%;
+	padding: 20px 20px 20px;
+	border-radius: 20px;
+	background-color: var(--accent-color);
+	position: relative;
+	display: flex;
+  	flex-direction: column;
+}
+	
+#link ul li .title{
+	text-align: center;
+	font-size: 2.4rem;
+	border-bottom: 3px dotted #fff;
+	margin-bottom: 10px;
+}
+#link ul li .description{
+	padding-bottom: 10px;
+}
+#link ul li a{
+	display: block;
+	padding: 10px;
+	background-color: var(--bg-color);
+	border: 3px solid var(--text-color);
+	border-radius: 20px;
+	text-align: center;
+	position: relative;
+	transition: all .3s;
+	margin-top: auto;
+}
+#link ul li a::after{
+    content: '';
+    border: 0;
+    border-top: solid 2px var(--text-color);
+    border-right: solid 2px  var(--text-color);
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%) rotate(45deg); /* rotate(45deg)で矢印を回転（向きを変更）させる */
+}
+
+#link ul li a:hover{
+	background-color: var(--accent-color);
+}
+
+
+
 /***************************************/
 /* news */
 /***************************************/
 #news{
-	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("../img/news-bg.jpg");
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/news-bg.jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
 	padding: 80px 0;
 }
@@ -97,6 +160,10 @@
 		font-size: 3.2rem;
 	}
 	
+	#link ul li{
+		width: 48%;
+		margin-bottom: 40px;
+	}
 	
 	#news ul.news-lists{
 		flex-direction: column;
