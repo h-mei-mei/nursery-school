@@ -56,7 +56,7 @@
 }
 #link ul li{
 	width: 24%;
-	padding: 20px 20px 20px;
+	padding: 10px;
 	border-radius: 20px;
 	background-color: var(--accent-color);
 	position: relative;
@@ -83,6 +83,7 @@
 	position: relative;
 	transition: all .3s;
 	margin-top: auto;
+	font-size: 1.2rem;
 }
 #link ul li a::after{
     content: '';

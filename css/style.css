@@ -71,6 +71,27 @@ main{
 	margin: 0 auto;
 }
 
+#sub-title{
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/news-bg.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#sub-title h2.page-title{
+	text-align: center;
+	padding: 100px 0;
+	color: #fff;
+	font-size: 4.2rem;
+}
+
+.sec-title{
+	text-align: center;
+	border-bottom: 3px dotted var(--accent-color);
+	margin-bottom: 20px;
+	font-size: 3.2rem;
+}
+
 /***************************************/
 /* header */
 /***************************************/
@@ -120,8 +141,8 @@ h1.site-title a:hover{
 	display: block;
 }
 #pc-menu ul li dl dt{
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	margin: 0 auto;
 	padding: 10px;
 	border-radius: 50%;
@@ -306,9 +327,41 @@ ul.footer-menu li a:hover{
 		width: 100%;
 	}
 	
+	
+	#sub-title h2{
+		padding: 80px 0;
+		font-size: 3.2rem;
+	}
+	
+}
+
+/***************************************/
+/* print */
+/***************************************/
+@media print {
+    body {
+        zoom: 0.6;
+        -webkit-print-color-adjust: exact;
+    }
 }
 
 
+/* IE10以上 */
+@media print and (-ms-high-contrast: none) {
+        /* @pageの指定いらないかも */
+    @page {
+        size: A4;
+        margin: 12.7mm 9.7mm;
+    }
+
+    body {
+        zoom: 1.8;
+        width: 1200px;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+		-webkit-print-color-adjust: exact;
+    }
+}
 
 
 
