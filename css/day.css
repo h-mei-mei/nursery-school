@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+/***************************************/
+/* day */
+/***************************************/
+#day{
+	padding-top: 80px;
+}
+#day dl{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto 40px;
+	max-width: 600px;
+	padding: 30px;
+	background-color: var(--accent-color);
+	border-radius: 20px;
+}
+#day dl dt,
+#day dl dd{
+	padding: 5px;
+	border-bottom: 2px solid var(--accent-color);
+	background-color: #fff;
+}
+#day dl dt{
+	width: 20%;
+	padding-right: 20px;
+	text-align: right;
+}
+#day dl dd{
+	width: 80%;
+}
+#day ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+}
+#day ul li{
+	display: block;
+	width: 24%;
+}
+
+/***************************************/
+/* season */
+/***************************************/
+#season{
+	padding-top: 80px;
+}
+#season ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#season li{
+	width: 24%;
+	background-color: var(--accent-color);
+	padding: 10px;
+	border-radius: 20px;
+}
+#season li p.title{
+	text-align: center;
+	font-size: 4.2rem;
+	border-bottom: 3px dotted #fff;
+	margin-bottom: 10px;
+	
+}
+
+/***************************************/
+/* smartphone */
+/***************************************/
+@media screen and (max-width: 750px){
+
+	#day ul li{
+		width: 48%;
+	}
+	
+	#season li{
+		width: 48%;
+		margin-bottom: 40px;
+	}
+}
