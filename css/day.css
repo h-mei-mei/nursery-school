@@ -60,15 +60,46 @@
 	background-color: var(--accent-color);
 	padding: 10px;
 	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
 }
 #season li p.title{
 	text-align: center;
 	font-size: 4.2rem;
 	border-bottom: 3px dotted #fff;
 	margin-bottom: 10px;
-	
+}
+#season li .img{
+	margin-top: auto;
 }
 
+/***************************************/
+/* shokuiku */
+/***************************************/
+#shokuiku{
+	padding: 80px 0;
+}
+#shokuiku dl{
+	margin-bottom: 40px;
+}
+#shokuiku dl dt{
+	background-color: var(--accent-color);
+	padding: 5px;
+}
+#shokuiku dl dd{
+	margin-bottom: 20px;
+}
+
+#shokuiku ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+}
+#shokuiku ul li{
+	display: block;
+	width: 24%;
+}
 /***************************************/
 /* smartphone */
 /***************************************/
@@ -76,10 +107,15 @@
 
 	#day ul li{
 		width: 48%;
+		margin-bottom: 20px;
 	}
 	
 	#season li{
 		width: 48%;
 		margin-bottom: 40px;
+	}
+	#shokuiku ul li{
+		width: 48%;
+		margin-bottom: 20px;
 	}
 }
