@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+/***************************************/
+/* day */
+/***************************************/
+
+#enter{
+	padding: 80px 0;
+}
+
+#enter dl dt{
+	display: block;
+	padding: 5px;
+	background-color: var(--accent-color);
+}
+#enter dl dd{
+	display: block;
+	margin-bottom: 10px;
+}
+/***************************************/
+/* smartphone */
+/***************************************/
+@media screen and (max-width: 750px){
+
+	
+}
