@@ -380,29 +380,22 @@ ul.footer-menu li a:hover{
 /***************************************/
 /* print */
 /***************************************/
-@media print {
-    body {
-        zoom: 0.6;
-        -webkit-print-color-adjust: exact;
-    }
+@page {
+  margin: 10mm;
+  size: 210mm 297mm; /* A4縦サイズの場合 */
 }
+@media print {
+  /* 全体設定 */
+  body {
+    -webkit-print-color-adjust: exact; /* 印刷時でも背景色や背景画像を表示 */
+    zoom: 0.65; /* なるべく多くのブラウザで切れないようにするため */
+  }
 
+	/* ヘッダーをfixedにしてる場合はこれにするといいかも */
+	.header-box {
+		position: absolute;
+	  }
 
-/* IE10以上 */
-@media print and (-ms-high-contrast: none) {
-        /* @pageの指定いらないかも */
-    @page {
-        size: A4;
-        margin: 12.7mm 9.7mm;
-    }
-
-    body {
-        zoom: 1.8;
-        width: 1200px;
-        transform: scale(0.5);
-        transform-origin: 0 0;
-		-webkit-print-color-adjust: exact;
-    }
 }
 
 
